@@ -1,0 +1,38 @@
+.numbers {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 255px;
+    color: var(--white-color);
+    font-family: $second-font;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        grid-gap: 0 30px;
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 0 25px;
+    }
+
+    &-icon {
+        vertical-align: middle;
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px 0;
+    }
+    &-count {
+        font-size: 18px;
+    }
+    &-title {
+        text-transform: uppercase;
+        font-size: var(--smaller-fz);
+    }
+}

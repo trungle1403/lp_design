@@ -1,0 +1,48 @@
+.clients {
+
+    background: url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-item {
+        width: 100%;
+        cursor: grab;
+        padding: 0 15px;
+    }
+    &-text {
+        width: 100%;
+        max-width: 680px;
+        margin: 0 auto;
+        color: var(--silver-color);
+        font-size: var(--big-fz);
+        font-family: $primary-font;
+        font-style: italic;
+        line-height: calc(var(--big-fz) + 10px);
+        margin-bottom: 25px;
+        font-weight: 500;
+    }
+    &-author {
+        color: var(--silver-color);
+        font-size: var(--smaller-fz);
+        font-family: $second-font;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    
+    .owl-dot {
+        background: var(--second-color) !important;
+        &:hover {
+            background: var(--silver-color) !important;
+        }
+        &.active {
+            background: var(--white-color) !important;
+        }
+    }
+
+}

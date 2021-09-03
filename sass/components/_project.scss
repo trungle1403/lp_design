@@ -1,0 +1,107 @@
+.projects {
+    background: var(--silver-color);
+
+    &-desc {
+        text-align: center;
+        margin-bottom: 55px;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 250px);
+        grid-gap: 30px;
+        grid-template-areas:
+        "p1 p2 p3"
+        "p4 p2 p5"
+        "p7 p6 p5"
+        "p7 p8 p9";
+    }
+    &-item:nth-child(1) {
+        grid-area: p1;
+    }
+    &-item:nth-child(2) {
+        grid-area: p2;
+    }
+    &-item:nth-child(3) {
+        grid-area: p3;
+    }
+    &-item:nth-child(4) {
+        grid-area: p4;
+    }
+    &-item:nth-child(5) {
+        grid-area: p5;
+    }
+    &-item:nth-child(6) {
+        grid-area: p6;
+    }
+    &-item:nth-child(7) {
+        grid-area: p7;
+    }
+    &-item:nth-child(8) {
+        grid-area: p8;
+    }
+    &-item:nth-child(9) {
+        grid-area: p9;
+    }
+    &-media {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &-item:hover &-content {
+        background: rgba(0,0,0,0.7);
+    }
+    &-content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--silver-color);
+        transition: all .3s linear;
+    }
+    &-container{
+        text-align: center;
+    }
+    &-item:hover &-title {
+        opacity: 1;
+        transition-delay: .3s;
+        transform:translateY(0);
+
+    }
+    &-item:hover &-category {
+        opacity: 1;
+        transition-delay: .6s;
+        transform:translateY(0);
+
+    }
+    &-title {
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        font-family: $primary-font;
+        font-size: var(--big-fz);
+        opacity: 0;
+        transition: all .3s linear;
+        font-weight: bold;
+        transform:translateY(-10px);
+    }
+    &-category {
+        text-transform: uppercase;
+        font-size: var(--smaller-fz);
+        font-weight: 500;
+        transition: all .3s linear;
+        opacity: 0;
+        font-family: $second-font;
+        transform:translateY(-10px);
+    }
+}

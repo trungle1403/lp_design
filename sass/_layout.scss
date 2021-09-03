@@ -1,0 +1,20 @@
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.section {
+    padding: 90px 0 100px;
+    scroll-margin-top: 70px;
+    &-title {
+        font-family: var(--primary-font);
+        font-size: var(--bigger-fz);
+        margin-bottom: 30px;
+        color: var(--primary-color);
+        text-transform: capitalize;
+        font-weight: bold;
+        text-align: center;
+    }
+}

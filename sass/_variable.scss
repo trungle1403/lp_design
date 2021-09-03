@@ -1,0 +1,36 @@
+
+$primary-font: 'Playfair Display', serif;
+$second-font: 'Work Sans', sans-serif;
+
+:root {
+    --primary-color: #171717;
+    --second-color: #6d6d6d;
+    --silver-color: #fafafa;
+    --silver-gray-color: #f6f6f6;
+    --white-color: #fff;
+    --black-color: #252525;
+    --linear-color: #0c0c0c;
+
+    --biggest-fz: 46px;
+    --bigger-fz: 38px;
+    --big-fz: 24px;
+    --normal-fz: 20px;
+    --small-fz: 15px;
+    --smaller-fz: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --biggest-fz: 40px;
+        --bigger-fz: 33px;
+        --big-fz: 20px;
+        --normal-fz: 18px;
+    }
+}
+@media screen and (max-width: 468px) {
+    :root {
+        --biggest-fz: 36px;
+        --bigger-fz: 30px;
+    }
+}
+
