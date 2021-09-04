@@ -103,3 +103,17 @@ window.addEventListener('click',(e) => {
     }
 })
 
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    distance: '70px',
+    duration: 2000,
+    delay: 400,
+    // reset: true
+})
+sr.reveal(`.nav-logo, .nav-item, .about-desc, .about-signature, .numbers-item, .projects-item, .brand-list, .blog-list, .footer-link, .footer-copy`,{origin: 'top', interval: 100})
+sr.reveal(`.section-title, .nav-toggle`,{origin: 'top', scale: .8})
+sr.reveal(`.projects-item`,{scale: .8})
+sr.reveal(`.hero-title,.hero-subtitle, .hero-scroll, .projects-desc, .blog-subtitle`,{origin: 'bottom', scale: .7, interval: 100})
+sr.reveal(`.clients-list`,{origin: 'bottom', scale: .8})
+sr.reveal(`.contact-content`, {origin: 'left'})
+sr.reveal(`.contact-form`, {origin: 'right'})
